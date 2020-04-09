@@ -2,6 +2,6 @@
 {
     public interface IUserDao
     {
-        Fuu GetUser(int id);
+        DomainFuu GetFuu(int id);
     }
 }

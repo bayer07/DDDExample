@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dao", "Dao\Dao.csproj", "{5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Application", "Infrastructure.Application\Infrastructure.Application.csproj", "{0221CB93-A148-46C2-87EB-18E69AEAA352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{75A3025D-D4E7-42A4-917B-74704C91AF74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0221CB93-A148-46C2-87EB-18E69AEAA352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0221CB93-A148-46C2-87EB-18E69AEAA352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0221CB93-A148-46C2-87EB-18E69AEAA352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A3025D-D4E7-42A4-917B-74704C91AF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A3025D-D4E7-42A4-917B-74704C91AF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A3025D-D4E7-42A4-917B-74704C91AF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A3025D-D4E7-42A4-917B-74704C91AF74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

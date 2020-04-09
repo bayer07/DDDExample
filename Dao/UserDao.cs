@@ -4,9 +4,9 @@ namespace Dao
 {
     public class UserDao : IUserDao
     {
-        public Fuu GetUser(int id)
+        public DomainFuu GetFuu(int id)
         {
-            return new Fuu { Name = "User" + id };
+            return new DomainFuu { Name = "User" + id };
         }
     }
 }

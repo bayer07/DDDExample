@@ -1,6 +1,6 @@
 ﻿using Castle.Windsor;
+using Contracts;
 using DI;
-using Domain;
 
 namespace Application
 {
@@ -9,9 +9,9 @@ namespace Application
         static void Main(string[] args)
         {
             IWindsorContainer container = new WindsorContainer();
-            container.Install(new ApplicationInstaller());
+            container.Install(new ApplicationInstaller(), new AutomapperInstaller());
             var service = container.Resolve<IService>();
-            var user = service.GetUser(1);
+            var fuu = service.GetFuu(1);
         }
     }
 }

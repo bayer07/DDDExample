@@ -41,8 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fuu.cs" />
-    <Compile Include="IService.cs" />
+    <Compile Include="DomainFuu.cs" />
     <Compile Include="IUserDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

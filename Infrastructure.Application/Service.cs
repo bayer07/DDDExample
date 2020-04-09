@@ -1,19 +1,25 @@
-﻿using Domain;
+﻿using AutoMapper;
+using Contracts;
+using Domain;
 
 namespace Infrastructure.Application
 {
     public class Service : IService
     {
-        public Service(IUserDao userDao)
+        public Service(IUserDao userDao, IMapper mapper)
         {
             this.userDao = userDao;
+            this.mapper = mapper;
         }
 
         private readonly IUserDao userDao;
+        private readonly IMapper mapper;
 
-        public Fuu GetUser(int id)
+        public ApplicationFuu GetFuu(int id)
         {
-            return userDao.GetUser(id);
+            var fuu = userDao.GetFuu(id);
+            var applicationFuu = mapper.Map<DomainFuu, ApplicationFuu>(fuu);
+            return applicationFuu;
         }
     }
 }
